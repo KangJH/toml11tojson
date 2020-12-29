@@ -1,12 +1,16 @@
 # toml11tojson
 A json converter util class for toml11.
 
-## Dependency
-[RapidJson](https://github.com/Tencent/rapidjson/)
-
 ## Interface
 - Converter::TomlToJson : Convert toml::value to rapidjson::Document
 - Converter::JsonToToml : Convert rapidjson::Document to toml::value 
+
+## How to use
+1. Copy converter.cpp and converter.h into your project.
+2. Copy rapidjson include files(external/rapidjson/include) into your project. 
+
+## Dependency
+[RapidJson](https://github.com/Tencent/rapidjson/)
 
 ## Example test code
 **Code**
