@@ -59,6 +59,3 @@ Output Json
 {"title":"TOML Example","owner":{"name":"Tom Preston-Werner","dob":{"year":1979,"month":4,"day":27,"hour":7,"minute":32,"second":0,"millisecond":0,"microsecond":0,"nanosecond":0,"offset_hour":-8,"offset_minute":0}},"database":{"server":"192.168.1.1","ports":[8001,8001,8002],"connection_max":5000,"enabled":true},"servers":{"alpha":{"ip":"10.0.0.1","dc":"eqdc10"},"beta":{"ip":"10.0.0.2","dc":"eqdc10"}},"clients":{"data":[["gamma","delta"],[1,2]],"hosts":["alpha","omega"]}}
 
 ```
-Converter::TomlToJson
-Converter::JsonToToml
-Toml11 &lt;-> Json converter
