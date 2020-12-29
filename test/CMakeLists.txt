@@ -11,3 +11,10 @@ target_link_libraries(
     PRIVATE toml_json_converter)
 
 set_target_properties(${TEST_TARGET} PROPERTIES LINK_FLAGS "-Wl,-rpath,../lib")
+
+add_custom_target(example_copy ALL)
+add_custom_command(
+        TARGET example_copy POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy
+                ${CMAKE_CURRENT_SOURCE_DIR}/example.toml
+                ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/example.toml)
